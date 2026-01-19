@@ -11,7 +11,7 @@ data_COM_VAL
     _dictionary.title            COM_VAL
     _dictionary.class            Template
     _dictionary.version          1.4.9
-    _dictionary.date             2025-11-05
+    _dictionary.date             2026-01-19
     _dictionary.uri              https://raw.githubusercontent.com/COMCIFS/cif_core/master/templ_enum.cif
     _dictionary.ddl_conformance  4.2.0
     _description.text
@@ -847,8 +847,8 @@ save_units_code
    'electrons_per_picometre_cubed'
    "electron-density 'electrons per picometres cubed (electrons * (metres * 10^(-12))^(-3))'"
 
-   'electrons_per_angstrom_squared_per_second'
-   "electron flux density  'electrons per angstrom squared per second  (electrons * (metres * 10^(-10))^(-2) * (seconds^(-1)))'"
+   'electrons_per_second_per_angstrom_squared'
+   "electron flux density  'electrons per second per angstrom squared (electrons * (seconds^(-1)) * (metres * 10^(-10))^(-2))'"
 
    'femtometres_per_angstrom_cubed'
    "scattering-length-density 'femtometres per angstroms cubed (10^-6 * (metres * 10^(-10))^(-2))'"
@@ -880,11 +880,11 @@ save_units_code
    'photons_per_second_per_micrometre_squared'
    "electromagnetic radiation flux density  'photons per second per micrometre squared (photons * (seconds^(-1)) * (metres * 10^(-6))^(-2))'"
 
-   'photons_per_millimetre_squared_per_second'
-   "electromagnetic radiation flux density  'photons per millimetre squared per second  (photons * (metres * 10^(-3))^(-2) * (seconds^(-1)))'"
+   'photons_per_second_per_millimetre_squared'
+   "electromagnetic radiation flux density  'photons per second per millimetre squared (photons * (seconds^(-1)) * (metres * 10^(-3))^(-2))'"
 
-   'neutrons_per_millimetre_squared_per_second'
-   "neutron flux density  'neutrons per millimetre squared per second  (neutrons * (metres * 10^(-3))^(-2) * (seconds^(-1)))'"
+   'neutrons_per_second_per_millimetre_squared'
+   "neutron flux density  'neutrons per second per millimetre squared (neutrons * (seconds^(-1)) * (metres * 10^(-3))^(-2))'"
 
    'megagray'     "radiation dose       'megagrays'"
 
@@ -2381,7 +2381,7 @@ save_
        'electrons_per_angstrom_cubed', 'electrons_per_picometre_cubed' and
        'femtometre_squared' enumeration states in the 'units_code' save frame.
 ;
-         1.4.9                    2025-11-05
+         1.4.9                    2026-01-19
 ;
        # Please update the date above and describe the change below until
        # ready for the next release
@@ -2426,4 +2426,12 @@ save_
        Updated description of the 'degrees_squared' units. (av)
 
        Added 'valence_units' to the units list. (bm)
+
+       Changed the word order in flux density units. As a result,
+       'electrons_per_angstrom_squared_per_second',
+       'photons_per_millimetre_squared_per_second' and
+       'neutrons_per_second_per_millimetre_squared' were replaced by
+       'electrons_per_second_per_angstrom_squared',
+       'photons_per_second_per_millimetre_squared' and
+       'neutrons_per_second_per_millimetre_squared' respectively. (av)
 ;
