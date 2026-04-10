@@ -12,7 +12,7 @@ data_COM_VAL
     _dictionary.class            Template
     _dictionary.version          1.4.9
     _dictionary.date             2026-01-19
-    _dictionary.uri              https://raw.githubusercontent.com/COMCIFS/cif_core/master/templ_enum.cif
+    _dictionary.uri              https://raw.githubusercontent.com/COMCIFS/Enumeration_Templates/main/templ_enum.cif
     _dictionary.ddl_conformance  4.2.0
     _description.text
 ;
