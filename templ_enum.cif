@@ -2383,9 +2383,6 @@ save_
 ;
          1.4.9                    2026-04-20
 ;
-       # Please update the date above and describe the change below until
-       # ready for the next release
-
        Altered hi_ang_Fox_c2 and hi_ang_Fox_c3 values to have them be the
        correct magnitude, rather than their 10x and 100x values, respectively.
 
